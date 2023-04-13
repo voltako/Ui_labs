@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sevenlab.Controller">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+        <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+            <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" layoutX="14.0" layoutY="4.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="362.0" prefWidth="200.0">
+              <content>
+                <AnchorPane fx:id="Pane" minHeight="0.0" minWidth="0.0" prefHeight="361.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="listView" prefHeight="362.0" prefWidth="185.0" />
+                     </children></AnchorPane>
+              </content>
+            </ScrollPane>
+            <Button fx:id="startbtn" layoutX="390.0" layoutY="310.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="47.0" text="Старт" />
+            <Slider fx:id="volumeMusicSlider" layoutX="229.0" layoutY="310.0" max="100" prefHeight="33.0" prefWidth="132.0" showTickLabels="true" value="50" />
+            <Button fx:id="stopbtn" layoutX="437.0" layoutY="310.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="57.0" text="Стоп" />
+            <ProgressBar fx:id="songProgressBar" layoutX="220.0" layoutY="280.0" prefHeight="18.0" prefWidth="417.0" progress="0.0" />
+            <Button fx:id="nextbtn" layoutX="551.0" layoutY="310.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="57.0" text="След" />
+            <TextField fx:id="nameOfMusic" layoutX="222.0" layoutY="244.0" prefHeight="25.0" prefWidth="407.0" />
+            <Button fx:id="againBtn" layoutX="494.0" layoutY="310.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="57.0" text="Заново" />
+            <Label fx:id="nameLabel" layoutX="288.0" prefHeight="242.0" prefWidth="275.0" textAlignment="JUSTIFY">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
