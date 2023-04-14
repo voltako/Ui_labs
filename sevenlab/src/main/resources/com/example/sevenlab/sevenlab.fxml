@@ -33,7 +33,7 @@
             <Button fx:id="stopbtn" layoutX="437.0" layoutY="310.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="57.0" text="Стоп" />
             <ProgressBar fx:id="songProgressBar" layoutX="220.0" layoutY="280.0" prefHeight="18.0" prefWidth="417.0" progress="0.0" />
             <Button fx:id="nextbtn" layoutX="551.0" layoutY="310.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="57.0" text="След" />
-            <TextField fx:id="nameOfMusic" layoutX="222.0" layoutY="244.0" prefHeight="25.0" prefWidth="407.0" />
+            <TextField fx:id="nameOfMusic" editable="false" layoutX="222.0" layoutY="244.0" prefHeight="25.0" prefWidth="407.0" />
             <Button fx:id="againBtn" layoutX="494.0" layoutY="310.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="57.0" text="Заново" />
             <Label fx:id="nameLabel" layoutX="288.0" prefHeight="242.0" prefWidth="275.0" textAlignment="JUSTIFY">
                <font>

@@ -151,6 +151,8 @@ public class Controller implements Initializable{
         mediaPlayer.setVolume(50);
         mediaPlayer.setVolume(volumeMusicSlider.getValue() * 0.01);
         mediaPlayer.play();
+        nameOfMusic.setText(songs.get(songNumber).getName());
+        nameLabel.setText(songs.get(songNumber).getName());
     }
 
 

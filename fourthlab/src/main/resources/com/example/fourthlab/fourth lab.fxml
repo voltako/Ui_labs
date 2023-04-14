@@ -11,11 +11,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fourthlab.Controller">
   <children>
     <MenuBar id="menubar" VBox.vgrow="NEVER">
       <menus>
-        <Menu mnemonicParsing="false" text="Файл">
+        <Menu fx:id="file" mnemonicParsing="false" text="Файл">
           <items>
             <MenuItem mnemonicParsing="false" text="New" />
             <MenuItem mnemonicParsing="false" text="Open…" />
@@ -31,7 +31,7 @@
             <MenuItem mnemonicParsing="false" text="Quit" />
           </items>
         </Menu>
-        <Menu mnemonicParsing="false" text="Правка">
+        <Menu fx:id="edit" mnemonicParsing="false" text="Правка">
           <items>
             <MenuItem mnemonicParsing="false" text="Undo" />
             <MenuItem mnemonicParsing="false" text="Redo" />
@@ -45,27 +45,27 @@
             <MenuItem mnemonicParsing="false" text="Unselect All" />
           </items>
         </Menu>
-        <Menu mnemonicParsing="false" text="Вид">
+        <Menu fx:id="vid" mnemonicParsing="false" text="Вид">
           <items>
             <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
           </items>
         </Menu>
-        <Menu mnemonicParsing="false" text="Вставка">
+        <Menu fx:id="input" mnemonicParsing="false" text="Вставка">
           <items>
             <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
           </items>
         </Menu>
-        <Menu mnemonicParsing="false" text="Формат">
+        <Menu fx:id="format" mnemonicParsing="false" text="Формат">
           <items>
             <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
           </items>
         </Menu>
-        <Menu mnemonicParsing="false" text="Сервис">
+        <Menu fx:id="service" mnemonicParsing="false" text="Сервис">
           <items>
             <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
           </items>
         </Menu>
-        <Menu mnemonicParsing="false" text="Данные">
+        <Menu fx:id="data" mnemonicParsing="false" text="Данные">
           <items>
             <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
           </items>

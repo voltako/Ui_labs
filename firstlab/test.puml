@@ -1,0 +1,20 @@
+@startuml
+class com.example.firstlab.FirstlabApp {
++ void start(Stage)
++ {static} void main(String[])
+}
+class com.example.firstlab.Calc {
++ {static} double calc(double,double)
+}
+class com.example.firstlab.Controller {
+- TextField paramx
+- TextField paramA
+- Button calculation
+- TextArea func
+- TextArea answer
+~ void initialize()
+}
+
+
+javafx.application.Application <|-- com.example.firstlab.FirstlabApp
+@enduml
